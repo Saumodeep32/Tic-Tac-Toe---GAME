@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(227, 227, 89);
+}
+nav {
+    background-color: rgb(5, 5, 67);
+    height: 55px;
+}
+li {
+    color: aliceblue;
+    list-style: none;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    padding: 8px 35px;
+}
+.gamecontainer {
+    /* background-color: rgb(235, 235, 68); */
+    display: flex;
+    justify-content: center;
+    padding-top: 5vw;
+    padding-bottom: 3vw;
+
+}
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+.box {
+    border: 2.5px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box:hover {
+    background-color: rgb(233, 164, 189);
+}
+.gameinfo {
+    padding: 0 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.gameinfo h1 {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   display: flex;
+   justify-content: center;
+   position: relative;
+   bottom: 40px;
+   font-size: 2.5rem;
+
+}
+.info {
+    display: flex;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 20px;
+    
+}
+.imgbox img {
+    width: 0;
+    transition: width 1s ease-in-out;
+    display: flex;
+    margin: auto;
+}
+
+
+
+.bl-0 {
+    border-left: 0;
+}
+.br-0 {
+    border-right: 0;
+}
+.bb-0 {
+    border-bottom: 0;
+}
+.bt-0 {
+    border-top: 0;
+}
+#reset {
+    padding: 8px 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+    position: relative;
+    margin: 30px 0;
+    background-color: rgb(245, 78, 128);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1.5px;
+    position: relative;
+    display: flex;
+    margin: auto;
+    top: 20px;
+}
